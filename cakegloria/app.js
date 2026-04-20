@@ -140,12 +140,20 @@ function getImagesArray(prod) {
 }
 
 function openDetail(id) {
-    var prod = products.find(function (p) { return p.id === id; });
+    var prod = products.find(function(p) { return p.id === id; });
     if (!prod) return;
     currentDetailId = id;
 
     galleryImages = getImagesArray(prod);
     galleryIndex = 0;
+
+    // Precargar todas las imágenes en segundo plano
+    galleryImages.forEach(function(src) {
+        var img = new Image();
+        img.src = src;
+        img.onerror = function() { this.src = PLACEHOLDER; };
+    });
+
     renderGallery();
 
     detailCategory.textContent = getCategoryName(prod.categoria);
