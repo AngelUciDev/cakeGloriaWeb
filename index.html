@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>CakeGloria - Pasteles Artesanales a Medida</title>
+    <meta name="description"
+        content="Pasteles artesanales para cada celebración. CakeGloria: sabores únicos, diseños personalizados, entrega en Cuba.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="CakeGloria - Pasteles Artesanales a Medida">
+    <meta property="og:description" content="Sabores únicos, diseños personalizados. ¡Pide el tuyo por WhatsApp!">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='85'%3E🎂%3C/text%3E%3C/svg%3E">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" id="mainHeader">
+        <nav class="nav">
+            <div class="nav-overlay" id="navOverlay"></div>
+            <a href="#" class="logo">
+                <span class="logo-icon">🎂</span>
+                <span class="logo-text">Cake<span class="logo-accent">Gloria</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#productos" class="nav-link">Pasteles</a>
+                <a href="#proceso" class="nav-link">Pedidos</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <div style="display:flex;align-items:center;gap:12px;">
+                <button class="cart-btn" id="cartBtn" aria-label="Carrito">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 6h15l-1.5 9h-12z"></path>
+                        <circle cx="9" cy="20" r="1"></circle>
+                        <circle cx="18" cy="20" r="1"></circle>
+                        <path d="M6 6L5 2H2"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <p class="hero-tagline">Pasteles Artesanales</p>
+            <h1 class="hero-title">Tu momento especial,<br><span class="title-highlight">más dulce</span></h1>
+            <p class="hero-subtitle">Pasteles hechos con amor, sabores únicos y diseños personalizados para cada
+                celebración</p>
+            <a href="#productos" class="hero-cta">
+                Ver Catálogo
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-scroll"><span>Desliza</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="categories">
+        <div class="container">
+            <div class="categories-grid">
+                <button class="category-btn active" data-category="todos"><span
+                        class="category-icon">✦</span>Todos</button>
+                <button class="category-btn" data-category="clasicos"><span
+                        class="category-icon">🎂</span>Clásicos</button>
+                <button class="category-btn" data-category="tematicos"><span
+                        class="category-icon">🎨</span>Temáticos</button>
+                <button class="category-btn" data-category="mini"><span class="category-icon">🧁</span>Mini
+                    Cakes</button>
+                <button class="category-btn" data-category="especiales"><span
+                        class="category-icon">✨</span>Especiales</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="products-section" id="productos">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-tag">Nuestros Pasteles</p>
+                <h2 class="section-title">Elige tu cake favorito</h2>
+            </header>
+            <div class="products-grid" id="productsGrid"></div>
+            <div class="loading" id="loading">
+                <div class="loading-spinner"></div>
+                <p>Cargando pasteles...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CÓMO PEDIR -->
+    <section class="process-section" id="proceso">
+        <div class="container">
+            <header class="section-header">
+                <p class="section-tag">¿Cómo pedir?</p>
+                <h2 class="section-title">Súper fácil, en 3 pasos</h2>
+            </header>
+            <div class="process-grid">
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </div>
+                    <h3>1. Elige tu cake</h3>
+                    <p>Revisa nuestro catálogo y selecciona el diseño que más te guste para tu celebración.</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"></path>
+                            <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+                        </svg>
+                    </div>
+                    <h3>2. Personaliza</h3>
+                    <p>Dinos el sabor, la medida, el relleno y los detalles que quieres. ¡Nosotros lo hacemos!</p>
+                </div>
+                <div class="process-card">
+                    <div class="process-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3>3. Recibe en tu puerta</h3>
+                    <p>Te lo preparamos con cariño y te lo entregamos. Pedidos con 24-48 horas de anticipación.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALIDAD -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="quality-grid">
+                <div class="quality-card">
+                    <div class="quality-icon">👩‍🍳</div>
+                    <h3>100% Artesanal</h3>
+                    <p>Cada cake lo hacemos a mano, con dedicación y el mejor cuidado en cada detalle.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">🧈</div>
+                    <h3>Ingredientes de calidad</h3>
+                    <p>Usamos materias primas frescas y de primera calidad en todas nuestras recetas.</p>
+                </div>
+                <div class="quality-card">
+                    <div class="quality-icon">💝</div>
+                    <h3>Hecho con amor</h3>
+                    <p>Ponemos todo nuestro corazón para que tu celebración sea perfecta e inolvidable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-content">
+                <h2>¿Listo para pedir tu cake?</h2>
+                <p>Escríbenos por WhatsApp, cuéntanos qué necesitas y te asesoramos en el diseño, sabor y precio.</p>
+                <a href="#" class="contact-btn" id="contactWhatsApp">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Pedir por WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">🎂</span>
+                    <span class="logo-text">Cake<span class="logo-accent">Gloria</span></span>
+                </div>
+                <p class="footer-copy">Pasteles artesanales para cada momento especial</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Inicio">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M18 15l-6-6-6 6"></path>
+        </svg>
+    </button>
+
+    <!-- MODAL DETALLE CON GALERÍA -->
+    <div class="detail-modal" id="detailModal">
+        <div class="detail-overlay" id="detailOverlay"></div>
+        <div class="detail-panel">
+            <button class="detail-close" id="detailClose">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"></path>
+                </svg>
+            </button>
+            <div class="detail-gallery-wrap">
+                <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Anterior">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+                </button>
+                <div class="detail-image-wrap">
+                    <img id="detailImage" src="" alt="">
+                </div>
+                <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Siguiente">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6"></path>
+                    </svg>
+                </button>
+                <div class="gallery-dots" id="galleryDots"></div>
+            </div>
+            <div class="detail-body">
+                <p class="detail-category" id="detailCategory"></p>
+                <h2 class="detail-name" id="detailName"></h2>
+                <p class="detail-measure" id="detailMeasure"></p>
+                <p class="detail-description" id="detailDescription"></p>
+                <p class="detail-price" id="detailPrice"></p>
+                <button class="detail-add-btn" id="detailAddBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 5v14M5 12h14"></path>
+                    </svg>
+                    Añadir al pedido
+                </button>
+                <p class="detail-wa-info">Pago y entrega se coordina por WhatsApp</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARRITO -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div class="cart-panel">
+            <header class="cart-header">
+                <h3>Tu Pedido</h3>
+                <button class="cart-close" id="cartClose">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </header>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-empty" id="cartEmpty">
+                <span class="empty-icon">🎂</span>
+                <p>Tu pedido está vacío</p>
+            </div>
+            <footer class="cart-footer" id="cartFooter">
+                <div class="cart-total"><span>Total:</span><span id="cartTotal">$0</span></div>
+                <p style="font-size:12px;color:#9ca3af;margin:0 0 12px 0;text-align:center;line-height:1.5;">Pedidos con
+                    24-48 horas de anticipación</p>
+                <button class="checkout-btn" id="checkoutBtn">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                    Hacer Pedido por WhatsApp
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        <span class="toast-icon">✓</span>
+        <span class="toast-message" id="toastMessage">Añadido al pedido</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

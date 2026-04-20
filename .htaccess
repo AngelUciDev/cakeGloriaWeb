@@ -1,0 +1,70 @@
+# ============================================
+# SEGURIDAD BÁSICA DEL SERVIDOR
+# ============================================
+Options -Indexes
+ServerSignature Off
+
+# Forzar HTTPS (Crucial para InfinityFree)
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Bloquear acceso directo a archivos sensibles
+<FilesMatch "^(productos\.json|\.htaccess|\.htpasswd)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Cabeceras de seguridad
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "DENY"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# ============================================
+# CONTROL DE CACHÉ PARA EVITAR PROBLEMAS DE VERSIONES
+# ============================================
+
+# Desactivar caché para HTML (siempre verificar)
+<FilesMatch "\.html?$">
+    Header set Cache-Control "public, must-revalidate, max-age=0"
+    Header set Pragma "public"
+    Header set Expires "0"
+</FilesMatch>
+
+# Desactivar caché para JS y JSON (siempre verificar)
+<FilesMatch "\.(js|json)$">
+    Header set Cache-Control "public, must-revalidate, max-age=0"
+    Header set Pragma "public"
+    Header set Expires "0"
+</FilesMatch>
+
+# Caché agresivo para CSS e imágenes (cambiar solo si es necesario)
+<FilesMatch "\.(css|jpg|jpeg|png|gif|ico|svg|woff|woff2)$">
+    Header set Cache-Control "public, max-age=31536000"
+</FilesMatch>
+
+# Comprimir contenido
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Habilitar mod_expires
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 0 seconds"
+    ExpiresByType text/plain "access plus 0 seconds"
+    ExpiresByType application/json "access plus 0 seconds"
+    ExpiresByType application/javascript "access plus 0 seconds"
+    ExpiresByType text/javascript "access plus 0 seconds"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
