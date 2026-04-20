@@ -5,7 +5,7 @@
 //         o ["imagenes/cake1.jpg", "imagenes/cake1b.jpg"] (varias fotos)
 // ============================================
 
-var WHATSAPP_NUMBER_PRODUCTOS = '+5355555555'; // ← CAMBIAR AL NÚMERO REAL
+var WHATSAPP_NUMBER_PRODUCTOS = '+5354022140'; // ← CAMBIAR AL NÚMERO REAL
 
 var productosData = [
     {
@@ -16,9 +16,10 @@ var productosData = [
         precio: 4500,
         moneda: "CUP",
         imagen: [
-            "imagenes/cake1.jpg",
-            "imagenes/cake1b.jpg",
-            "imagenes/cake1c.jpg"
+            "imagenes/17767179834ddb(1).png",
+            "imagenes/17767179834ddb(2).png",
+            "imagenes/17767179834ddb(3).png",
+            "imagenes/17767179834ddb(4).png"
         ],
         categoria: "clasicos",
         disponible: true
