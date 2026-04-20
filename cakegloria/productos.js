@@ -36,7 +36,7 @@ var productosData = [
             "imagenes/cake2b.jpg"
         ],
         categoria: "clasicos",
-        disponible: true
+        disponible: false
     },
     {
         id: 3,
