@@ -32,12 +32,12 @@ var productosData = [
         precio: 5500,
         moneda: "CUP",
         imagen: [
-            "imagenes/bombon/1776721487.png",
-            "imagenes/bombon/1776721638.png",
-            "imagenes/bombon/1776722562.png",
-            "imagenes/bombon/1776722572.png",
-            "imagenes/bombon/1776722581.png",
-            "imagenes/bombon/1776722588.png"
+            "imagenes/bombon/1776721487.webp",
+            "imagenes/bombon/1776721638.webp",
+            "imagenes/bombon/1776722562.webp",
+            "imagenes/bombon/1776722572.webp",
+            "imagenes/bombon/1776722581.webp",
+            "imagenes/bombon/1776722588.webp"
         ],
         categoria: "clasicos",
         disponible: true
