@@ -301,8 +301,7 @@ function renderProducts(list) {
         card.style.animationDelay = (i * 0.07) + 's';
         card.innerHTML =
             '<div class="product-image-container' + (ok ? '' : ' sold-out') + '" data-id="' + prod.id + '">'
-            + '<img src="' + prod.imagen + '" alt="' + prod.nombre + '" class="product-image" loading="lazy" onerror="this.src=\'' + PLACEHOLDER + '\'">'
-            + '<span class="product-category">' + getCategoryName(prod.categoria) + '</span>'
+            + '<img src="' + (Array.isArray(prod.imagen) ? prod.imagen[0] : prod.imagen) + '" alt="' + prod.nombre + '" class="product-image" loading="lazy" onerror="this.src=\'' + PLACEHOLDER + '\'">' + '<span class="product-category">' + getCategoryName(prod.categoria) + '</span>'
             + (prod.medida ? '<span class="product-measure-badge">' + prod.medida + '</span>' : '')
             + (ok ? '' : '<span class="sold-out-badge">AGOTADO</span>')
             + (ok ? '<button class="quick-add" data-id="' + prod.id + '" title="Añadir al pedido"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"></path></svg></button>' : '')
@@ -386,8 +385,7 @@ function updateCartUI() {
     cartItems.innerHTML = cart.map(function (item) {
         precioTotal += item.precio * item.cantidad;
         return '<div class="cart-item">'
-            + '<img src="' + item.imagen + '" alt="" class="cart-item-image" onerror="this.src=\'' + PLACEHOLDER + '\'">'
-            + '<div class="cart-item-info">'
+            + '<img src="' + (Array.isArray(item.imagen) ? item.imagen[0] : item.imagen) + '" alt="" class="cart-item-image" onerror="this.src=\'' + PLACEHOLDER + '\'">' + '<div class="cart-item-info">'
             + '<h4>' + item.nombre + '</h4>'
             + (item.medida ? '<p class="cart-item-measure">' + item.medida + '</p>' : '')
             + '<p class="cart-item-price">' + formatPrecio(item.precio, item.moneda) + '</p>'

@@ -26,10 +26,10 @@ var productosData = [
     },
     {
         id: 2,
-        nombre: "Cake Chocolate Intenso",
+        nombre: "Cake Bombón",
         descripcion: "Panetela de chocolate triple con relleno de ganache. Cobertura de chocolate semiamargo y virutas.",
-        medida: "18x10",
-        precio: 3800,
+        medida: "12x12",
+        precio: 5500,
         moneda: "CUP",
         imagen: [
             "imagenes/cake2.jpg",
