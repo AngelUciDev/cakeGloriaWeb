@@ -170,5 +170,35 @@ var productosData = [
         ],
         categoria: "clasicos",
         disponible: true
+    },
+    {
+        id: 12,
+        nombre: "Cake bombón con confituras",
+        descripcion: "Cake bombón con confituras",
+        medida: "21x12",
+        precio: 6500,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/confitura/1776794583.jpeg",
+            "imagenes/confitura/1776794672.jpeg",
+            "imagenes/confitura/1776790363.jpeg"
+        ],
+        categoria: "confituras",
+        disponible: true
+    },
+    {
+        id: 13,
+        nombre: "Cake bombón con confituras y nata",
+        descripcion: "Cake bombón con confituras y nata",
+        medida: "21x12",
+        precio: 7500,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/confitura/1776790474.jpeg",
+            "imagenes/confitura/1776790409.jpeg",
+            "imagenes/confitura/1776790446.jpeg"
+        ],
+        categoria: "confituras",
+        disponible: true
     }
 ];
