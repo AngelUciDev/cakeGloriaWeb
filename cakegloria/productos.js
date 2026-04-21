@@ -28,7 +28,7 @@ var productosData = [
         id: 2,
         nombre: "Cake Bombón",
         descripcion: "Panetela de chocolate triple con relleno de ganache. Cobertura de chocolate semiamargo y virutas.",
-        medida: "12x12",
+        medida: "21x12",
         precio: 5500,
         moneda: "CUP",
         imagen: [
@@ -38,6 +38,135 @@ var productosData = [
             "imagenes/bombon/1776722572_compressed.png",
             "imagenes/bombon/1776722581_compressed.png",
             "imagenes/bombon/1776722588_compressed.png"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 3,
+        nombre: "Cake de nata ",
+        descripcion: "Panetela de chocolate triple con relleno de ganache. Cobertura de chocolate semiamargo y virutas.",
+        medida: "21x12",
+        precio: 6000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/nata/1776738653.png",
+            "imagenes/nata/1776738666.png",
+            "imagenes/nata/1776738679.png",
+            "imagenes/nata/1776738695.png",
+            "imagenes/nata/1776738709.png",
+            "imagenes/nata/1776738723.png",
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 4,
+        nombre: "Cake muñequito",
+        descripcion: "Cake de muñequitos",
+        medida: "21x12",
+        precio: 5000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/muñequito/1776739888.png",
+            "imagenes/muñequito/1776739902.png"
+        ],
+        categoria: "tematicos",
+        disponible: true
+    },
+    {
+        id: 5,
+        nombre: "Cake muñequito de bombón",
+        descripcion: "cake de muñequitos de bombón",
+        medida: "21x12",
+        precio: 5500,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/muñequito/1776739845.png",
+            "imagenes/muñequito/1776739860.png"
+        ],
+        categoria: "tematicos",
+        disponible: true
+    },
+    {
+        id: 6,
+        nombre: "Cake de santos",
+        descripcion: "cake de santos",
+        medida: "21x12",
+        precio: 5500,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/santos/1776741342.png",
+            "imagenes/santos/1776741333.png"
+        ],
+        categoria: "especiales",
+        disponible: true
+    },
+    {
+        id: 7,
+        nombre: "Cake de santos de hoja como comestible",
+        descripcion: "Cake de santos de hoja como comestible",
+        medida: "21x12",
+        precio: 6500,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/santos/1776741399.png",
+            "imagenes/santos/1776741352.png"
+        ],
+        categoria: "especiales",
+        disponible: true
+    },
+    {
+        id: 8,
+        nombre: "Cake de santos de bombon",
+        descripcion: "Cake de santos de bombon",
+        medida: "21x12",
+        precio: 6000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/santos/1776741382.png",
+            "imagenes/santos/1776741443.png"
+        ],
+        categoria: "especiales",
+        disponible: true
+    },
+    {
+        id: 9,
+        nombre: "Cake cuadrado",
+        descripcion: "Cake cuadrado",
+        medida: "26x26",
+        precio: 12000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/cuadrado/1776743644.jpeg",
+            "imagenes/cuadrado/1776743771.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 10,
+        nombre: "Cake doble de alto redondo 22x20",
+        descripcion: "Cake cuadrado",
+        medida: "26x26",
+        precio: 12000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/cuadrado/1776742388.jpeg",
+            "imagenes/cuadrado/1776742448.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 11,
+        nombre: "Cake rectangular",
+        descripcion: "Cake cuadrado",
+        medida: "23x29",
+        precio: 12000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/cuadrado/1776742462.jpeg"
         ],
         categoria: "clasicos",
         disponible: true
