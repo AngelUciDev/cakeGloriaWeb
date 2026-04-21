@@ -11,7 +11,7 @@ var currentDetailId = null;
 
 // WhatsApp: lee de productos.js, fallback por si acaso
 var WHATSAPP_NUMBER = (typeof WHATSAPP_NUMBER_PRODUCTOS !== 'undefined')
-    ? WHATSAPP_NUMBER_PRODUCTOS : '+5355555555';
+    ? WHATSAPP_NUMBER_PRODUCTOS : '+5354022140';
 
 // ============================================
 // DOM
@@ -433,16 +433,21 @@ cartClose.addEventListener('click', closeCartModal);
 checkoutBtn.addEventListener('click', function () {
     if (!cart.length) return;
     var mon = cart[0].moneda || 'CUP';
-    var msg = '*NUEVO PEDIDO - CakeGloria* 🎂\n━━━━━━━━━━━━━━━━━━━━\n\n';
-    cart.forEach(function (item, i) {
-        msg += (i + 1) + '. *' + item.nombre + '*\n';
-        if (item.medida) msg += '   Medida: ' + item.medida + '\n';
-        msg += '   Cantidad: ' + item.cantidad + '\n';
-        msg += '   Precio: ' + formatPrecio(item.precio, mon) + '\n';
-        msg += '   Subtotal: ' + formatPrecio(item.precio * item.cantidad, mon) + '\n\n';
-    });
     var total = cart.reduce(function (s, i) { return s + (i.precio * i.cantidad); }, 0);
-    msg += '━━━━━━━━━━━━━━━━━━━━\n*TOTAL: ' + formatPrecio(total, mon) + '*\n\n_Pedidos con 24-48 horas de anticipación_';
+
+    var msg = '🎂 *Hola Gloria! Quiero hacer un pedido*\n\n';
+
+    cart.forEach(function (item, i) {
+        msg += '📦 *' + item.nombre + '*\n';
+        if (item.medida) msg += '   📏 Medida: ' + item.medida + '\n';
+        msg += '   🔢 Cantidad: ' + item.cantidad + '\n';
+        msg += '   💲 Precio: ' + formatPrecio(item.precio, mon) + '\n\n';
+    });
+
+    msg += '━━━━━━━━━━━━━━\n';
+    msg += '*Total: ' + formatPrecio(total, mon) + '*\n\n';
+    msg += '_Gracias! 🍰_';
+
     window.open('https://wa.me/' + WHATSAPP_NUMBER.replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(msg), '_blank');
 });
 
