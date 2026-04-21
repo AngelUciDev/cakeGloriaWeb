@@ -16,10 +16,10 @@ var productosData = [
         precio: 4500,
         moneda: "CUP",
         imagen: [
-            "imagenes/cakeclasico/1776719085.png",
+            "imagenes/cakeclasico/1776719085.jpg",
             "imagenes/cakeclasico/1776719092.png",
             "imagenes/cakeclasico/1776719098.png",
-            "imagenes/cakeclasico/1776719106.png"
+            "imagenes/cakeclasico/1776719106.jpg"
         ],
         categoria: "clasicos",
         disponible: true
