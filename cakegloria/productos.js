@@ -5,7 +5,7 @@
 //         o ["imagenes/cake1.jpg", "imagenes/cake1b.jpg"] (varias fotos)
 // ============================================
 
-var WHATSAPP_NUMBER_PRODUCTOS = '+5354022140'; // ← CAMBIAR AL NÚMERO REAL
+var WHATSAPP_NUMBER_PRODUCTOS = '+5352780323'; // ← CAMBIAR AL NÚMERO REAL
 
 var productosData = [
     {

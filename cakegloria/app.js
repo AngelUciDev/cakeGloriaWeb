@@ -11,7 +11,7 @@ var currentDetailId = null;
 
 // WhatsApp: lee de productos.js, fallback por si acaso
 var WHATSAPP_NUMBER = (typeof WHATSAPP_NUMBER_PRODUCTOS !== 'undefined')
-    ? WHATSAPP_NUMBER_PRODUCTOS : '+5354022140';
+    ? WHATSAPP_NUMBER_PRODUCTOS : '+5352780323';
 
 // ============================================
 // DOM
