@@ -200,5 +200,61 @@ var productosData = [
         ],
         categoria: "confituras",
         disponible: true
+    },
+    {
+        id: 14,
+        nombre: "Cake temáticos",
+        descripcion: "Cake temáticos",
+        medida: "21x12",
+        precio: 6000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/tematico/1776824070.jpeg",
+            "imagenes/tematico/1776824099.jpeg"
+        ],
+        categoria: "tematicos",
+        disponible: true
+    },
+    {
+        id: 15,
+        nombre: "Cake temáticos de nata",
+        descripcion: "Cake temáticos de nata",
+        medida: "21x12",
+        precio: 7500,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/tematico/1776824099.jpeg",
+            "imagenes/tematico/1776824070.jpeg"
+        ],
+        categoria: "tematicos",
+        disponible: true
+    },
+    {
+        id: 16,
+        nombre: "Cake temáticos de hoja comestible",
+        descripcion: "Cake temáticos de hoja comestible",
+        medida: "21x12",
+        precio: 7000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/tematico/1776824080.jpeg",
+            "imagenes/tematico/1776824089.jpeg"
+        ],
+        categoria: "tematicos",
+        disponible: true
+    },
+    {
+        id: 17,
+        nombre: "Cake temáticos de bombón",
+        descripcion: "Cake temáticos de bombón",
+        medida: "21x12",
+        precio: 7000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/tematico/1776824524.jpeg",
+            "imagenes/tematico/1776824616.jpeg"
+        ],
+        categoria: "tematicos",
+        disponible: true
     }
 ];
