@@ -11,7 +11,7 @@ var productosData = [
     {
         id: 1,
         nombre: "Cake Felicidades Clásico",
-        descripcion: "Panetela de vainilla rellena de chocolate o todo de vainilla. Decorado con flores de crema y detalles personalizados.",
+        descripcion: "Suave panetela de vainilla con opción de relleno de chocolate o totalmente vainilla. Decorado con delicadas flores de crema y detalles personalizados para celebrar cualquier ocasión.",
         medida: "21x12",
         precio: 4500,
         moneda: "CUP",
@@ -27,7 +27,7 @@ var productosData = [
     {
         id: 2,
         nombre: "Cake Bombón",
-        descripcion: "Panetela de chocolate triple con relleno de ganache. Cobertura de chocolate semiamargo y virutas.",
+        descripcion: "Exquisita panetela de chocolate triple rellena de ganache, cubierta con chocolate semiamargo y decorada con virutas que aportan textura y sabor intenso.",
         medida: "21x12",
         precio: 5500,
         moneda: "CUP",
@@ -44,8 +44,8 @@ var productosData = [
     },
     {
         id: 3,
-        nombre: "Cake de nata ",
-        descripcion: "Panetela de chocolate triple con relleno de ganache. Cobertura de chocolate semiamargo y virutas.",
+        nombre: "Cake de Nata",
+        descripcion: "Panetela de chocolate triple con relleno cremoso de ganache, cubierta con nata fresca y detalles decorativos que realzan su elegancia.",
         medida: "21x12",
         precio: 6000,
         moneda: "CUP",
@@ -62,8 +62,8 @@ var productosData = [
     },
     {
         id: 4,
-        nombre: "Cake muñequito",
-        descripcion: "Cake de muñequitos",
+        nombre: "Cake Muñequito",
+        descripcion: "Divertida panetela decorada con muñequitos coloridos, ideal para cumpleaños infantiles y celebraciones temáticas.",
         medida: "21x12",
         precio: 5000,
         moneda: "CUP",
@@ -76,8 +76,8 @@ var productosData = [
     },
     {
         id: 5,
-        nombre: "Cake muñequito de bombón",
-        descripcion: "cake de muñequitos de bombón",
+        nombre: "Cake Muñequito de Bombón",
+        descripcion: "Panetela de chocolate con decoración de muñequitos elaborados en bombón, perfecta para sorprender a los más pequeños.",
         medida: "21x12",
         precio: 5500,
         moneda: "CUP",
@@ -90,8 +90,8 @@ var productosData = [
     },
     {
         id: 6,
-        nombre: "Cake de santos",
-        descripcion: "cake de santos",
+        nombre: "Cake de Santos",
+        descripcion: "Panetela decorada con motivos religiosos, ideal para celebraciones espirituales y ocasiones especiales.",
         medida: "21x12",
         precio: 5500,
         moneda: "CUP",
@@ -104,8 +104,8 @@ var productosData = [
     },
     {
         id: 7,
-        nombre: "Cake de santos de hoja como comestible",
-        descripcion: "Cake de santos de hoja como comestible",
+        nombre: "Cake de Santos con Hoja Comestible",
+        descripcion: "Panetela decorada con imágenes religiosas impresas en hoja comestible, aportando un toque único y personalizado.",
         medida: "21x12",
         precio: 6500,
         moneda: "CUP",
@@ -118,8 +118,8 @@ var productosData = [
     },
     {
         id: 8,
-        nombre: "Cake de santos de bombon",
-        descripcion: "Cake de santos de bombon",
+        nombre: "Cake de Santos de Bombón",
+        descripcion: "Panetela de chocolate con decoración temática religiosa en bombón, combinando tradición y dulzura.",
         medida: "21x12",
         precio: 6000,
         moneda: "CUP",
@@ -132,8 +132,8 @@ var productosData = [
     },
     {
         id: 9,
-        nombre: "Cake cuadrado",
-        descripcion: "Cake cuadrado",
+        nombre: "Cake Cuadrado",
+        descripcion: "Imponente cake cuadrado de gran tamaño, ideal para compartir en eventos familiares o celebraciones grandes.",
         medida: "26x26",
         precio: 12000,
         moneda: "CUP",
@@ -146,9 +146,9 @@ var productosData = [
     },
     {
         id: 10,
-        nombre: "Cake doble de alto redondo 22x20",
-        descripcion: "Cake cuadrado",
-        medida: "26x26",
+        nombre: "Cake Doble de Alto Redondo",
+        descripcion: "Elegante cake redondo de dos niveles, con altura especial para destacar en cualquier mesa de celebración.",
+        medida: "22x20",
         precio: 12000,
         moneda: "CUP",
         imagen: [
@@ -160,8 +160,8 @@ var productosData = [
     },
     {
         id: 11,
-        nombre: "Cake rectangular",
-        descripcion: "Cake cuadrado",
+        nombre: "Cake Rectangular",
+        descripcion: "Cake rectangular de gran tamaño, perfecto para reuniones y celebraciones con muchos invitados.",
         medida: "23x29",
         precio: 12000,
         moneda: "CUP",
@@ -173,8 +173,8 @@ var productosData = [
     },
     {
         id: 12,
-        nombre: "Cake bombón con confituras",
-        descripcion: "Cake bombón con confituras",
+        nombre: "Cake Bombón con Confituras",
+        descripcion: "Panetela de chocolate con relleno de ganache y confituras frutales, que aportan frescura y contraste de sabores.",
         medida: "21x12",
         precio: 6500,
         moneda: "CUP",
@@ -188,8 +188,8 @@ var productosData = [
     },
     {
         id: 13,
-        nombre: "Cake bombón con confituras y nata",
-        descripcion: "Cake bombón con confituras y nata",
+        nombre: "Cake Bombón con Confituras y Nata",
+        descripcion: "Deliciosa combinación de panetela de chocolate con confituras frutales y cobertura de nata fresca.",
         medida: "21x12",
         precio: 7500,
         moneda: "CUP",
@@ -203,8 +203,8 @@ var productosData = [
     },
     {
         id: 14,
-        nombre: "Cake temáticos",
-        descripcion: "Cake temáticos",
+        nombre: "Cake Temático",
+        descripcion: "Cake decorado con diseños personalizados según la ocasión, ideal para cumpleaños, aniversarios y celebraciones especiales.",
         medida: "21x12",
         precio: 6000,
         moneda: "CUP",
@@ -218,8 +218,8 @@ var productosData = [
     },
     {
         id: 15,
-        nombre: "Cake temáticos de nata",
-        descripcion: "Cake temáticos de nata",
+        nombre: "Cake Temático de Nata",
+        descripcion: "Panetela decorada con nata fresca y motivos temáticos, perfecta para quienes buscan un toque elegante y festivo.",
         medida: "21x12",
         precio: 7500,
         moneda: "CUP",
@@ -231,10 +231,10 @@ var productosData = [
         categoria: "tematicos",
         disponible: true
     },
-    {
+        {
         id: 16,
-        nombre: "Cake temáticos de hoja comestible",
-        descripcion: "Cake temáticos de hoja comestible",
+        nombre: "Cake Temático de Hoja Comestible",
+        descripcion: "Panetela decorada con diseños impresos en hoja comestible, ofreciendo un acabado único y personalizado para cualquier celebración especial.",
         medida: "21x12",
         precio: 7000,
         moneda: "CUP",
@@ -249,8 +249,8 @@ var productosData = [
     },
     {
         id: 17,
-        nombre: "Cake temáticos de bombón",
-        descripcion: "Cake temáticos de bombón",
+        nombre: "Cake Temático de Bombón",
+        descripcion: "Panetela de chocolate decorada con bombones y motivos temáticos, ideal para quienes buscan un toque dulce y creativo en sus celebraciones.",
         medida: "21x12",
         precio: 7000,
         moneda: "CUP",
