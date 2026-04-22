@@ -210,6 +210,7 @@ var productosData = [
         moneda: "CUP",
         imagen: [
             "imagenes/tematico/1776824070.jpeg",
+            "imagenes/tematico/1776825749.jpeg",
             "imagenes/tematico/1776824099.jpeg"
         ],
         categoria: "tematicos",
@@ -223,8 +224,9 @@ var productosData = [
         precio: 7500,
         moneda: "CUP",
         imagen: [
-            "imagenes/tematico/1776824099.jpeg",
-            "imagenes/tematico/1776824070.jpeg"
+            "imagenes/tematico/1776825726.jpeg",
+            "imagenes/tematico/1776825841.jpeg",
+            "imagenes/tematico/1776825848.jpeg"
         ],
         categoria: "tematicos",
         disponible: true
@@ -238,7 +240,9 @@ var productosData = [
         moneda: "CUP",
         imagen: [
             "imagenes/tematico/1776824080.jpeg",
-            "imagenes/tematico/1776824089.jpeg"
+            "imagenes/tematico/1776824089.jpeg",
+            "imagenes/tematico/1776825740.jpeg",
+            "imagenes/tematico/1776824616.jpeg"
         ],
         categoria: "tematicos",
         disponible: true
