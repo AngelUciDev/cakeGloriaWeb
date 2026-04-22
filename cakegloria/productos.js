@@ -17,8 +17,8 @@ var productosData = [
         moneda: "CUP",
         imagen: [
             "imagenes/cakeclasico/1776719085.jpg",
-            "imagenes/cakeclasico/1776719092.png",
-            "imagenes/cakeclasico/1776719098.png",
+            "imagenes/cakeclasico/1776719092.jpeg",
+            "imagenes/cakeclasico/1776719098.jpeg",
             "imagenes/cakeclasico/1776719106.jpg"
         ],
         categoria: "clasicos",
@@ -34,10 +34,10 @@ var productosData = [
         imagen: [
             "imagenes/bombon/1776721487_compressed.png",
             "imagenes/bombon/1776721638_compressed.png",
-            "imagenes/bombon/1776722562_compressed.png",
-            "imagenes/bombon/1776722572_compressed.png",
-            "imagenes/bombon/1776722581_compressed.png",
-            "imagenes/bombon/1776722588_compressed.png"
+            "imagenes/bombon/1776722562_compressed.jpeg",
+            "imagenes/bombon/1776722572_compressed.jpeg",
+            "imagenes/bombon/1776722581_compressed.jpeg",
+            "imagenes/bombon/1776722588_compressed.jpeg"
         ],
         categoria: "clasicos",
         disponible: true
@@ -97,7 +97,7 @@ var productosData = [
         moneda: "CUP",
         imagen: [
             "imagenes/santos/1776741342.png",
-            "imagenes/santos/1776741333.png"
+            "imagenes/santos/1776741333.jpeg"
         ],
         categoria: "especiales",
         disponible: true
@@ -111,7 +111,7 @@ var productosData = [
         moneda: "CUP",
         imagen: [
             "imagenes/santos/1776741399.png",
-            "imagenes/santos/1776741352.png"
+            "imagenes/santos/1776741352.jpeg"
         ],
         categoria: "especiales",
         disponible: true
@@ -125,7 +125,7 @@ var productosData = [
         moneda: "CUP",
         imagen: [
             "imagenes/santos/1776741382.png",
-            "imagenes/santos/1776741443.png"
+            "imagenes/santos/1776741443.jpeg"
         ],
         categoria: "especiales",
         disponible: true
