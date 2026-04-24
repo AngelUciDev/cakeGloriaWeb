@@ -47,15 +47,12 @@ var productosData = [
         nombre: "Cake de Nata",
         descripcion: "Panetela de chocolate triple con relleno cremoso de ganache, cubierta con nata fresca y detalles decorativos que realzan su elegancia.",
         medida: "21x12",
-        precio: 6000,
+        precio: 6500,
         moneda: "CUP",
         imagen: [
-            "imagenes/nata/1776738653.png",
-            "imagenes/nata/1776738666.png",
-            "imagenes/nata/1776738679.png",
-            "imagenes/nata/1776738695.png",
-            "imagenes/nata/1776738709.png",
-            "imagenes/nata/1776738723.png",
+            "imagenes/nata/cakenata.jpeg",
+            "imagenes/nata/cakenata1.jpeg",
+            "imagenes/nata/cakenata2.jpeg"
         ],
         categoria: "clasicos",
         disponible: true
@@ -259,6 +256,144 @@ var productosData = [
             "imagenes/tematico/1776824616.jpeg"
         ],
         categoria: "tematicos",
+        disponible: true
+    },
+    {
+        id: 18,
+        nombre: "Cake Tres pisos",
+        descripcion: "Cake Tres pisos",
+        medida: "21x12",
+        precio: 150,
+        moneda: "USD",
+        imagen: [
+            "imagenes/cakeTresPisos/cakeTresPisos.jpeg",
+            "imagenes/cakeTresPisos/cakeTresPisos1.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 19,
+        nombre: "Cake Tres leches",
+        descripcion: "Cake Tres leches",
+        medida: "21x12",
+        precio: 8000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/tresleches/tresleches.jpeg",
+            "imagenes/tresleches/tresleches1.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 20,
+        nombre: "Cake Altos",
+        descripcion: "Cake Altos",
+        medida: "21x18",
+        precio: 1500,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/cakealtos/cakealtos1.jpeg",
+            "imagenes/cakealtos/cakealtos.jpeg",
+            "imagenes/cakealtos/cakealtos2.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 21,
+        nombre: "Cake de revelación de sexo",
+        descripcion: "Cake de revelación de sexo",
+        medida: "21x12",
+        precio: 5000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/reveleacionsexo/1777051307.jpeg",
+            "imagenes/reveleacionsexo/1777051312.jpeg",
+            "imagenes/reveleacionsexo/1777051319.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 22,
+        nombre: "Cake de revelación de sexo con temática",
+        descripcion: "Cake de revelación de sexo con temática",
+        medida: "21x12",
+        precio: 6000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/revelacionsexotematico/revelacionSexoTematico.jpeg",
+            "imagenes/revelacionsexotematico/revelacionSexoTematico1.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 23,
+        nombre: "Cake 15",
+        descripcion: "Puede variar el precio según relleno y decoración",
+        medida: "?",
+        precio: 80,
+        moneda: "USD",
+        imagen: [
+            "imagenes/cake15/cake.jpeg",
+            "imagenes/cake15/cake2.jpeg",
+            "imagenes/cake15/cake3.jpeg",
+            "imagenes/cake15/cake4.jpeg",
+            "imagenes/cake15/cake5.jpeg",
+            "imagenes/cake15/cake6.jpeg",
+            "imagenes/cake15/cake7.jpeg",
+            "imagenes/cake15/cake9.jpeg",
+            "imagenes/cake15/cake10.jpeg",
+            "imagenes/cake15/cake11.jpeg",
+            "imagenes/cake15/cake12.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 24,
+        nombre: "Cake de un piso para boda o quince",
+        descripcion: "Puede variar precio depende del relleno y la decoración",
+        medida: "21x12",
+        precio: 30,
+        moneda: "USD",
+        imagen: [
+            "imagenes/cakeUnPisoBoda/cakeUnpiso.jpeg",
+            "imagenes/cakeUnPisoBoda/cakeUnpiso1.jpeg",
+            "imagenes/cakeUnPisoBoda/cakeUnpiso2.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 25,
+        nombre: "Cake de un piso para boda o quince",
+        descripcion: "Puede variar precio depende del relleno y la decoración",
+        medida: "21x18",
+        precio: 60,
+        moneda: "USD",
+        imagen: [
+            "imagenes/cakeUnPisoBodas/cakeUnpiso1.jpeg",
+            "imagenes/cakeUnPisoBodas/cakeUnpiso.jpeg"
+        ],
+        categoria: "clasicos",
+        disponible: true
+    },
+    {
+        id: 26,
+        nombre: "Cake de niña",
+        descripcion: "Cake de niña",
+        medida: "21x11",
+        precio: 6000,
+        moneda: "CUP",
+        imagen: [
+            "imagenes/cakeUnPisoBodas/cakeUnpiso1.jpeg",
+            "imagenes/cakeUnPisoBodas/cakeUnpiso.jpeg"
+        ],
+        categoria: "clasicos",
         disponible: true
     }
 ];
